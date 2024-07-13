@@ -71,6 +71,11 @@
 			<artifactId>modelmapper</artifactId>
 			<version>3.1.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.9.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -91,10 +96,9 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.11.0</version>
+				<version>3.9.0</version>
 				<configuration>
-					<source>NIXPACKSJDKVERSION:21</source>
-					<target>NIXPACKSJDKVERSION:21</target>
+					<source>21</source>
 				</configuration>
 			</plugin>
 		</plugins>
